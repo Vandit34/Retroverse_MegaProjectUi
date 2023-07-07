@@ -1,0 +1,93 @@
+
+
+[1]
+✅
+To the stop the animation the below code can be used
+
+.carousel_slider:hover
+{
+  animation-play-state: paused;
+}
+
+
+[2]
+✅
+/* 🌟 To give the Overlay effect we will use the parent of the .carousel_shows */
+.card
+{
+  position: relative;
+  width: 21em;
+}
+.card .carousel_shows
+{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  /* backface-visibility: hidden; */
+  /* overflow:hidden; */
+
+}
+
+[3]
+
+✅
+The perspective property defines how far the object is away from the user. 
+The backfacee visibility is hiddden meanst back wali thing not visible
+object-fit: contain; it is used to for the adjustment of the image 
+
+rotateY(180deg) rotate from right-side 
+rotateY(-180deg) rotate from left-side
+
+
+[4]
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Scroll Feature:
+
+👉Always create a div outside the content you want to ccreate it will help to give margin.
+
+👉Use width:100% for all the layers 
+
+👉Give height to the div:
+
+🌟 Give height to trending_content    
+
+<section class="trending">
+          <div class="trending_content">
+            <div class="trending_heading">
+              <h2>Trending</h2>
+            </div>
+            <div class="scroll_container">
+              <div class="scroll_section">
+                <div class="card_cover">
+                  <div class="card_trend">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="hero_gif"></div> -->
+        </section>
+
+🌟card_cover & scroll_section (closest parent of the card_cover which is reponsible for the scroll feature or which act as cover for all the cards)
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXs
+
+
+🌟✅ CSS Specificity(0 1 0 0) Make the note of this property & ✅ background-attachement
+
+🌟 ✅ "gap' can only be used when the display is flex or grid , flex-grow, flex-shrink, and flex-basis---->>(flex: flex-grow flex-grid flex-shrink)
+
+🌟 ✅ min-width & min height made the video zoom as the screen size decreased
+
+
+🌟 ✅ input[type="checkbox"].toggle:checked  label:before vs  input[type="checkbox"].toggle:checked + label:before
+
+The space between the selectors indicates that the label:before pseudo-element can be anywhere within the label element's descendants, not necessarily immediately following the checkbox input.
+
+The adjacent sibling combinator (+) indicates that the label:before pseudo-element must be the immediate next sibling of the checkbox input, with no other elements in between.
+
+
+🎯Learn about the Flexbox & Grid from Kevin Sir + Add revision 2 days every week of old concepts + Read About CSS 3 days every week 
